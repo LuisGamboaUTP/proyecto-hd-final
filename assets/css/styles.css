@@ -1,0 +1,26 @@
+/* Estilos personalizados */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAF7;
+            /* Un verde muy claro, casi blanco */
+        }
+
+        .text-brand-green {
+            color: #2E4031;
+        }
+
+        .bg-brand-green {
+            background-color: #2E4031;
+        }
+
+        .bg-brand-light-green {
+            background-color: #EBF0E8;
+        }
+
+        .border-brand-green {
+            border-color: #2E4031;
+        }
+
+        .hover-bg-brand-dark-green:hover {
+            background-color: #243327;
+        }

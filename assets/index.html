@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Jardín Perú - Tienda de Plantas</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body class="text-brand-green">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-brand-green flex items-center">
+                        <img src="img/icon.png" alt="Logo Mi Jardín" class="h-12 w-12 mr-2">
+                        Mi Jardín
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex md:space-x-8">
+                    <a href="#" class="font-medium hover:text-green-700 transition duration-150 ease-in-out">Plantas de
+                        Interior</a>
+                    <a href="#" class="font-medium hover:text-green-700 transition duration-150 ease-in-out">Plantas
+                        Grandes</a>
+                    <a href="#" class="font-medium hover:text-green-700 transition duration-150 ease-in-out">Macetas</a>
+                    <a href="#"
+                        class="font-medium hover:text-green-700 transition duration-150 ease-in-out">Accesorios</a>
+                </nav>
+
+                <!-- Icons and Mobile Menu Button -->
+                <div class="flex items-center space-x-4">
+                    <button class="hidden md:block hover:text-green-700">
+                        <i data-lucide="search" class="w-6 h-6"></i>
+                    </button>
+                    <button class="hover:text-green-700">
+                        <i data-lucide="user" class="w-6 h-6"></i>
+                    </button>
+                    <button class="hover:text-green-700">
+                        <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                    </button>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-light-green">Plantas
+                    de Interior</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-light-green">Plantas
+                    Grandes</a>
+                <a href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-light-green">Macetas</a>
+                <a href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-brand-light-green">Accesorios</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[60vh] md:h-[80vh] bg-cover bg-center"
+            style="background-image: url(img/banner.png);">
+            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Transforma tu hogar en un espacio verde
+                </h1>
+                <p class="text-lg md:text-xl max-w-2xl mb-8">Descubre nuestra selección de plantas y accesorios para
+                    llenar tu vida de naturaleza.</p>
+                <a href="#"
+                    class="bg-brand-green text-white font-bold py-3 px-8 rounded-full text-lg hover-bg-brand-dark-green transition duration-300">Ver
+                    Plantas</a>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12">Nuestras Categorías</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Category Card 1 -->
+                    <div class="text-center group">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="img/plant1.png"
+                                alt="Plantas de Interior"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Plantas de Interior</h3>
+                        <a href="#" class="font-medium text-green-700 hover:underline">Ver más</a>
+                    </div>
+                    <!-- Category Card 2 -->
+                    <div class="text-center group">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="img/plant2.png"
+                                alt="Plantas Grandes"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Plantas Grandes</h3>
+                        <a href="#" class="font-medium text-green-700 hover:underline">Ver más</a>
+                    </div>
+                    <!-- Category Card 3 -->
+                    <div class="text-center group">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="img/plant3.png"
+                                alt="Macetas de Cemento"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Macetas de Cemento</h3>
+                        <a href="#" class="font-medium text-green-700 hover:underline">Ver más</a>
+                    </div>
+                    <!-- Category Card 4 -->
+                    <div class="text-center group">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="img/plant4.png"
+                                alt="Accesorios de Jardinería"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Accesorios</h3>
+                        <a href="" class="font-medium text-green-700 hover:underline">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers -->
+        <section class="py-16 bg-brand-light-green">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12">Los Más Vendidos</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Product Card -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                        <img src="https://placehold.co/400x400/FFFFFF/2E4031?text=Monstera+Deliciosa"
+                            alt="Monstera Deliciosa" class="w-full h-64 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-lg font-semibold mb-2">Monstera Deliciosa</h3>
+                            <p class="text-xl font-bold mb-4">S/ 89.00</p>
+                            <button
+                                class="w-full bg-brand-green text-white font-bold py-2 px-4 rounded-full hover-bg-brand-dark-green transition duration-300 opacity-0 group-hover:opacity-100">Añadir
+                                al carrito</button>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                        <img src="https://placehold.co/400x400/FFFFFF/2E4031?text=Ficus+Lyrata" alt="Ficus Lyrata"
+                            class="w-full h-64 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-lg font-semibold mb-2">Ficus Lyrata</h3>
+                            <p class="text-xl font-bold mb-4">S/ 120.00</p>
+                            <button
+                                class="w-full bg-brand-green text-white font-bold py-2 px-4 rounded-full hover-bg-brand-dark-green transition duration-300 opacity-0 group-hover:opacity-100">Añadir
+                                al carrito</button>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                        <img src="https://placehold.co/400x400/FFFFFF/2E4031?text=Sansevieria" alt="Sansevieria"
+                            class="w-full h-64 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-lg font-semibold mb-2">Sansevieria</h3>
+                            <p class="text-xl font-bold mb-4">S/ 65.00</p>
+                            <button
+                                class="w-full bg-brand-green text-white font-bold py-2 px-4 rounded-full hover-bg-brand-dark-green transition duration-300 opacity-0 group-hover:opacity-100">Añadir
+                                al carrito</button>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                        <img src="https://placehold.co/400x400/FFFFFF/2E4031?text=Anturio+Rojo" alt="Anturio Rojo"
+                            class="w-full h-64 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-lg font-semibold mb-2">Anturio Rojo</h3>
+                            <p class="text-xl font-bold mb-4">S/ 75.00</p>
+                            <button
+                                class="w-full bg-brand-green text-white font-bold py-2 px-4 rounded-full hover-bg-brand-dark-green transition duration-300 opacity-0 group-hover:opacity-100">Añadir
+                                al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-brand-light-green rounded-full p-4 mb-4">
+                            <i data-lucide="leaf" class="w-10 h-10 text-green-700"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Calidad Premium</h3>
+                        <p class="text-gray-600">Nuestras plantas son cultivadas por expertos para asegurar su salud y
+                            belleza.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-brand-light-green rounded-full p-4 mb-4">
+                            <i data-lucide="truck" class="w-10 h-10 text-green-700"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Envíos Rápidos</h3>
+                        <p class="text-gray-600">Entregas en 24/48 horas en Lima. También enviamos a todo el Perú.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-brand-light-green rounded-full p-4 mb-4">
+                            <i data-lucide="message-circle" class="w-10 h-10 text-green-700"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Asesoría Experta</h3>
+                        <p class="text-gray-600">Te ayudamos a elegir y cuidar tus plantas a través de WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-green text-white">
+        <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Mi Jardín</h3>
+                    <p class="text-gray-300">Creamos espacios más verdes y saludables. Conéctate con la naturaleza.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tienda</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Plantas</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Macetas</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Accesorios</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Regalos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ayuda</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Envíos y Devoluciones</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Síguenos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i data-lucide="facebook"
+                                class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i data-lucide="instagram"
+                                class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i data-lucide="twitter"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Mi Jardín Perú. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
